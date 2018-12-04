@@ -1,0 +1,31 @@
+"The rule has been duplicated.","The rule has been duplicated."
+"We can't duplicate the rule right now. Please review the log and try again.","We can't duplicate the rule right now. Please review the log and try again."
+"We can't find a rule to duplicate.","We can't find a rule to duplicate."
+"You deleted %1 rule(s).","You deleted %1 rule(s)."
+"We can't delete the rule right now. Please review the log and try again.","We can't delete the rule right now. Please review the log and try again."
+"We can't find a rule(s) to delete.","We can't find a rule(s) to delete."
+"A total of %1 record(s) have been updated.","A total of %1 record(s) have been updated."
+"Something went wrong while updating the rule(s) priority.","Something went wrong while updating the rule(s) priority."
+"We can't find a rule to update its priority.","We can't find a rule to update its priority."
+"Something went wrong while updating the rule(s) status.","Something went wrong while updating the rule(s) status."
+"We can't find a rule to update its status.","We can't find a rule to update its status."
+"Percent of product price discount","Percent of product price discount"
+"Fixed amount discount","Fixed amount discount"
+"Fixed amount discount for whole cart","Fixed amount discount for whole cart"
+"Buy N products, and get next products with discount","Buy N products, and get next products with discount"
+"Auto add promo items with products","Auto add promo items with products"
+"Auto add promo items for the whole cart","Auto add promo items for the whole cart"
+"Auto add the same product","Auto add the same product"
+"Auto add promo items for every $X spent","Auto add promo items for every $X spent"
+Delete,Delete
+Enable,Enable
+Disable,Disable
+"Top Priority","Top Priority"
+"Lowest Priority","Lowest Priority"
+"Rule Type","Rule Type"
+Stop,Stop
+No,No
+Yes,Yes
+"Discount Amount","Discount Amount"
+Action,Action
+Duplicate,Duplicate

@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="adminhtml.block.promo.quote.grid">
+            <block class="Magento\Backend\Block\Widget\Grid\Massaction" name="amasty.rgrid.massaction" as="grid.massaction">
+                <arguments>
+                    <argument name="massaction_id_field" xsi:type="string">rule_id</argument>
+                    <argument name="form_field_name" xsi:type="string">ids</argument>
+                    <argument name="use_select_all" xsi:type="string">1</argument>
+                    <argument name="options" xsi:type="array">
+                        <item name="delete" xsi:type="array">
+                            <item name="label" xsi:type="string" translate="true">Delete</item>
+                            <item name="url" xsi:type="string">amasty_rgrid/promo_quote/massDelete</item>
+                        </item>
+                        <item name="massEnable" xsi:type="array">
+                            <item name="label" xsi:type="string" translate="true">Enable</item>
+                            <item name="url" xsi:type="url" path="amasty_rgrid/promo_quote/massStatus">
+                                <param name="status">1</param>
+                            </item>
+                        </item>
+                        <item name="massDisable" xsi:type="array">
+                            <item name="label" xsi:type="string" translate="true">Disable</item>
+                            <item name="url" xsi:type="url" path="amasty_rgrid/promo_quote/massStatus">
+                                <param name="status">0</param>
+                            </item>
+                        </item>
+                        <item name="massTopPriority" xsi:type="array">
+                            <item name="label" xsi:type="string" translate="true">Top Priority</item>
+                            <item name="url" xsi:type="url" path="amasty_rgrid/promo_quote/massPriority">
+                                <param name="priority">top</param>
+                            </item>
+                        </item>
+                        <item name="massLowPriority" xsi:type="array">
+                            <item name="label" xsi:type="string" translate="true">Lowest Priority</item>
+                            <item name="url" xsi:type="url" path="amasty_rgrid/promo_quote/massPriority">
+                                <param name="priority">low</param>
+                            </item>
+                        </item>
+                    </argument>
+                </arguments>
+            </block>
+
+            <referenceBlock name="adminhtml.promo.quote.grid.columnSet">
+                <block class="Magento\Backend\Block\Widget\Grid\Column" as="rule_action">
+                    <arguments>
+                        <argument name="header" xsi:type="string" translate="true">Rule Type</argument>
+                        <argument name="index" xsi:type="string">simple_action</argument>
+                        <argument name="type" xsi:type="string">options</argument>
+                        <argument name="options" xsi:type="options" model="Amasty\Rgrid\Model\RuleActions"/>
+                    </arguments>
+                </block>
+
+                <block class="Magento\Backend\Block\Widget\Grid\Column" as="stop">
+                    <arguments>
+                        <argument name="header" xsi:type="string" translate="true">Stop</argument>
+                        <argument name="index" xsi:type="string">stop_rules_processing</argument>
+                        <argument name="type" xsi:type="string">options</argument>
+                        <argument name="options" xsi:type="array">
+                            <item name="active" xsi:type="array">
+                                <item name="value" xsi:type="string">0</item>
+                                <item name="label" xsi:type="string" translate="true">No</item>
+                            </item>
+                            <item name="inactive" xsi:type="array">
+                                <item name="value" xsi:type="string">1</item>
+                                <item name="label" xsi:type="string" translate="true">Yes</item>
+                            </item>
+                        </argument>
+                    </arguments>
+                </block>
+
+                <block class="Magento\Backend\Block\Widget\Grid\Column" as="amount">
+                    <arguments>
+                        <argument name="header" xsi:type="string" translate="true">Discount Amount</argument>
+                        <argument name="index" xsi:type="string">discount_amount</argument>
+                    </arguments>
+                </block>
+
+                <block class="Magento\Backend\Block\Widget\Grid\Column" as="actionGrid">
+                    <arguments>
+                        <argument name="header" xsi:type="string" translate="true">Action</argument>
+                        <argument name="type" xsi:type="string">action</argument>
+                        <argument name="filter" xsi:type="string">0</argument>
+                        <argument name="sortable" xsi:type="string">0</argument>
+                        <argument name="is_system" xsi:type="string">1</argument>
+                        <argument name="getter" xsi:type="string">getRuleId</argument>
+                        <argument name="actions" xsi:type="array">
+                            <item name="duplicate" xsi:type="array">
+                                <item name="caption" xsi:type="string" translate="true">Duplicate</item>
+                                <item name="url" xsi:type="array">
+                                    <item name="base" xsi:type="string">amasty_rgrid/promo_quote/duplicate</item>
+                                </item>
+                                <item name="field" xsi:type="string">id</item>
+                            </item>
+                        </argument>
+                    </arguments>
+                </block>
+            </referenceBlock>
+        </referenceBlock>
+    </body>
+</page>
