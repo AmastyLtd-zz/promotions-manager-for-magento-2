@@ -55,6 +55,10 @@ With the column, admin users can get the value of the discount in figures / perc
 * [Magento AJAX Shopping Cart](https://marketplace.magento.com/amasty-extension-ajax-shopping-cart.html)
 * [Custom Form for Magento 2](https://marketplace.magento.com/amasty-module-magento-custom-form.html)
 
+* [Magento 2 Wishlist Extension](https://github.com/AmastyLtd/wishlist-for-magento-2)
+* [Magento 2 Google Map](https://github.com/AmastyLtd/google-map-for-magento-2)
+* [Magento 2 Facebook Comments](https://github.com/AmastyLtd/facebook-comments-for-magento-2)
+
 * [Magento Custom Form](https://amasty.com/magento-form-builder.html?utm_source=github&utm_medium=link&utm_campaign=listings)
 * [Magento GDPR](https://amasty.com/magento-gdpr.html?utm_source=github&utm_medium=link&utm_campaign=listings)
 * [AJAX Shopping Cart for Magento 2](https://amasty.com/ajax-shopping-cart-for-magento-2.html?utm_source=github&utm_medium=link&utm_campaign=listings)
